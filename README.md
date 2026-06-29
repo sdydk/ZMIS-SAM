@@ -1,8 +1,12 @@
 # ZMIS-SAM: Zooplankton Marine Instance Segmentation with SAM
 
-ZMIS-SAM adapts the [Segment Anything Model (SAM)](https://segment-anything.com/) for fine-grained instance segmentation of marine zooplankton. It uses a frozen SAM ViT-Huge backbone with lightweight adapters and a Mask R-CNN–style detection head, enabling precise detection and segmentation of 48 zooplankton categories.
+ZMIS-SAM adapts the [Segment Anything Model (SAM)](https://segment-anything.com/) for fine-grained instance segmentation of marine zooplankton. It uses a frozen SAM ViT-Huge backbone with lightweight adapters and a Mask R-CNN–style detection head, enabling precise detection and segmentation of 47 zooplankton categories.
 
 ![Model Architecture](figs/ZMIS-SAM.png)
+
+
+## :speech_balloon: Updates
+🚩 **News** (2026.06) This paper has been accepted as a paper at [**_ECCV 2026_**], The files corresponding to ZMIS-SAM are currently incomplete, and we are uploading relevant files step by step.
 
 ## Dataset: ZMIS5K
 
@@ -11,9 +15,9 @@ ZMIS5K contains 5,000 microscopic zooplankton images across 48 species, annotate
 ![Dataset Overview](figs/ZMIS5K.png)
 
 <details>
-<summary>48 Categories</summary>
+<summary>47 Categories</summary>
 
-`_background_`, Calanus sinicus, Sagitta crassa, Themisto gracilipes, Penilia avirostris, Centropages abdominalis, Acartia pacifica, Centropages tenuiremis, Pontellopsis tenuicauda, Calanopia thompsoni, Sugiura chengshanense, Ophioplutues larva early, Eirene menoni, Macrura larva, Evadne tergestina, Muggiaea atlantica, Paracalanus parvus, Oithona plumifera, Pleurobrachia globosa, Clytia folleata, Obelia dichotoma, Ectopleura bimanatus, Dolioletta gegenbauri, Oikopleura longicauda, Tornaria larva, Polychaeta larva early, Polychaeta larva later, Turritopsis nutricula, Proboscidactyla flavicirrata, Fritillaria formica, Labidocera rotunda, Alima larva, Megalopa larva, Brachyura zoea larva, Ophioplutues larva later, Fish eggs, Fish larva, Actinotrocha larva, Trochophora larva, Bougainvillia muscus, Aequorea conica, Varitentaculata yantaiensis, Porcellana zoea larva, Acetes larva, Centropages dorsispinatus, Clytia hemisphaerica, Jellyfish larva, Remains
+Calanus sinicus, Sagitta crassa, Themisto gracilipes, Penilia avirostris, Centropages abdominalis, Acartia pacifica, Centropages tenuiremis, Pontellopsis tenuicauda, Calanopia thompsoni, Sugiura chengshanense, Ophioplutues larva early, Eirene menoni, Macrura larva, Evadne tergestina, Muggiaea atlantica, Paracalanus parvus, Oithona plumifera, Pleurobrachia globosa, Clytia folleata, Obelia dichotoma, Ectopleura bimanatus, Dolioletta gegenbauri, Oikopleura longicauda, Tornaria larva, Polychaeta larva early, Polychaeta larva later, Turritopsis nutricula, Proboscidactyla flavicirrata, Fritillaria formica, Labidocera rotunda, Alima larva, Megalopa larva, Brachyura zoea larva, Ophioplutues larva later, Fish eggs, Fish larva, Actinotrocha larva, Trochophora larva, Bougainvillia muscus, Aequorea conica, Varitentaculata yantaiensis, Porcellana zoea larva, Acetes larva, Centropages dorsispinatus, Clytia hemisphaerica, Jellyfish larva, Remains
 
 </details>
 
@@ -91,6 +95,19 @@ bash tools/dist_test.sh configs/zmis_train.py <checkpoint> 4
 
 Metrics reported: COCO bbox mAP and segm mAP.
 
+## Citation
+If you find our repo or ZMIS5K dataset useful for your research, please cite us:
+```
+@inproceedings{lian2024diving,
+  title     = {ZMIS-SAM: Segment Anything Model Enhanced with Wavelet Transform for Zooplankton Microscopy Image Instance Segmentation},
+  author    = {Yuan, Dekun and Li, Zhongwei and Qiao, Zheng and Zhang, jie},
+  booktitle = {Proceedings of the 41st International Conference on Machine Learning},
+  pages     = {},
+  year      = {2026}
+  url       = {https://proceedings.mlr.press/v235/lian24c.html},
+}
+```
+
 ## Acknowledgements
 
-This project builds on [MMDetection](https://github.com/open-mmlab/mmdetection) and [Segment Anything Model](https://github.com/facebookresearch/segment-anything).
+This project builds on [MMDetection](https://github.com/open-mmlab/mmdetection) and [Segment Anything Model](https://github.com/facebookresearch/segment-anything). In addition, we referenced some of the code in the [RSPrompter](https://github.com/KyanChen/RSPrompter/tree/lightning) and [USIS-SAM](https://github.com/KyanChen/RSPrompter/tree/lightning) repository. Thanks to them for their excellent work.
