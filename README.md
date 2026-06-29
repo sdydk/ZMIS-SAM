@@ -6,11 +6,11 @@ ZMIS-SAM adapts the [Segment Anything Model (SAM)](https://segment-anything.com/
 
 
 ## :speech_balloon: Updates
-🚩 **News** (2026.06) This paper has been accepted as a paper at [**_ECCV 2026_**], The files corresponding to ZMIS-SAM are currently incomplete, and we are uploading relevant files step by step.
+🚩 **News** (2026.06) This paper has been accepted as a paper at [**_ECCV 2026_**]. The files corresponding to ZMIS-SAM are currently incomplete, and we are uploading relevant files step by step.
 
 ## Dataset: ZMIS5K
 
-ZMIS5K contains 5,000 microscopic zooplankton images across 48 species, annotated in COCO format with bounding boxes and instance masks.
+ZMIS5K contains 5,358 microscopic zooplankton images across 47 species, annotated in COCO format with bounding boxes and instance masks.
 
 ![Dataset Overview](figs/ZMIS5K.png)
 
@@ -98,16 +98,16 @@ Metrics reported: COCO bbox mAP and segm mAP.
 ## Citation
 If you find our repo or ZMIS5K dataset useful for your research, please cite us:
 ```
-@inproceedings{lian2024diving,
+@inproceedings{dekunyuan,
   title     = {ZMIS-SAM: Segment Anything Model Enhanced with Wavelet Transform for Zooplankton Microscopy Image Instance Segmentation},
   author    = {Yuan, Dekun and Li, Zhongwei and Qiao, Zheng and Zhang, jie},
-  booktitle = {Proceedings of the 41st International Conference on Machine Learning},
+  booktitle = {Proceedings of the 19th European Conference on Computer Vision},
   pages     = {},
   year      = {2026}
-  url       = {https://proceedings.mlr.press/v235/lian24c.html},
+  url       = {},
 }
 ```
 
 ## Acknowledgements
 
-This project builds on [MMDetection](https://github.com/open-mmlab/mmdetection) and [Segment Anything Model](https://github.com/facebookresearch/segment-anything). In addition, we referenced some of the code in the [RSPrompter](https://github.com/KyanChen/RSPrompter/tree/lightning) and [USIS-SAM](https://github.com/KyanChen/RSPrompter/tree/lightning) repository. Thanks to them for their excellent work.
+This project builds on [MMDetection](https://github.com/open-mmlab/mmdetection) and [Segment Anything Model](https://github.com/facebookresearch/segment-anything). In addition, we referenced some of the code in the [RSPrompter](https://github.com/KyanChen/RSPrompter/tree/lightning) and [USIS-SAM](https://github.com/LiamLian0727/USIS10K/tree/main) repository. Thanks to them for their excellent work.
