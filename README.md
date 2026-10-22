@@ -101,10 +101,11 @@ If you find our repo or ZMIS5K dataset useful for your research, please cite us:
 @inproceedings{dekunyuan,
   title     = {ZMIS-SAM: Segment Anything Model Enhanced with Wavelet Transform for Zooplankton Microscopy Image Instance Segmentation},
   author    = {Yuan, Dekun and Li, Zhongwei and Qiao, Zheng and Zhang, jie},
-  booktitle = {Proceedings of the 19th European Conference on Computer Vision},
-  pages     = {},
-  year      = {2026}
-  url       = {},
+  booktitle = {Proceedings of the 19th European Conference on Computer Vision (ECCV 2026)},
+  vol       = {17052},
+  pages     = {93--111},
+  year      = {2026},
+  url       = {https://doi.org/10.1007/978-3-032-37235-2_6},
 }
 ```
 
